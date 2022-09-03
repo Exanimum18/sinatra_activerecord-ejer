@@ -1,0 +1,12 @@
+<div>
+  <h2>
+    Lista de restaurantes
+  </h2>
+  <ul>
+    <% @restaurants.each do |restaurant| %>
+    <li>
+      <p>Name: <%= restaurant.name %> </p> <p>City: <%= restaurant.city %></p> <p>Address: <%= restaurant.address%></p>
+    </li>
+    <% end %>
+  </ul>
+</div>
